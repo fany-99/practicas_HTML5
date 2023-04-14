@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Descuentos en autos</title>
+    <script src="./js/practica3.js"></script>
+    <link rel="stylesheet" href="./css/StyleAutos.css">
+  </head>
+  <body>
+
+
+    <h1 id="texto">Calculadora de descuentos en autos</h1>
+    <br><br>
+    <div style="text-align: center;"></div>
+    <div><img src="img/focus.png" alt="" id="imagen"></div>
+
+
+
+      <form id="auto-form">
+      <label for="marca-input">Marca:</label>
+      <input type="text" id="marca-input" name="marca"><br><br>
+      <label for="modelo-input">Modelo:</label>
+      <input type="text" id="modelo-input" name="modelo"><br><br>
+      <button type="submit">Calcular descuento</button>
+    </form>
+    <p id="descuento-output"></p>
+    <p class="small-txt"></p>
+    <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+  </body>
+</html>

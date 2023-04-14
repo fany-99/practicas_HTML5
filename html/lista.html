@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-lista.css" type="text/css">
+    
+    <title>APP de Tareas</title>
+</head>
+<body>
+    <div>
+        <h3>Lista de Tareas</h3>
+    </div>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form id="form">
+            <input type="text" name="taskText" autocomplete="off" placeholder="Tarea">
+            <input type="submit" class="addTaskButton" value="+">
+            <input type="button" class="orderButton roundBorder" value="Ordenar" id="ordered">
+        </form>
+        <div id="taskContainer"></div>
+    </div>
+    <script src="./js/desafio3.js"></script>
+    <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+</body>
+
+</html>

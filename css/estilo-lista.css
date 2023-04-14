@@ -1,0 +1,184 @@
+:root{
+    --primary: #A2D9CE;
+    --secondary: #074549;
+    --ligth: #FFF;
+    --dark: #4b4545;
+    --disabled: #bef0ae;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--disabled);
+}
+
+
+h3{
+    padding-top: 10px;
+    text-align: center;
+    color: var(--secondary);
+}
+
+*:first-letter{
+    text-transform: capitalize;
+}
+
+.roundBorder{
+    border-radius: 0px;
+}
+
+.list{
+    margin: 50px auto;
+    padding: 50px;
+    background-color: var(--dark);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date{
+    display: inline-flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight{
+    display: flow-root;
+    align-items: center;
+}
+
+#dateNumber{
+    font-size: 50px;
+
+}
+
+#dateText{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateNumber, #dateText, #dateMonth{
+    font-weight: bold;
+}
+
+#dateMonth, #dateYear{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+form{
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input{
+    border: none;
+    padding-left: 10px;
+    background-color: var(--disabled);
+}
+
+input[type=text]{
+    background-color: var(--ligth);
+    border-bottom: 2px solid var(--dark);
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButton, .orderButton{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton{
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--disabled);
+}
+
+.orderButton{
+    background-color: var(--secondary);
+    color: var(--ligth);
+}
+
+.task{
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.done{
+    background-color: var(--disabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+body {
+   
+    height:  60vh;
+    margin: 50px;
+    background-color: #f2f2f2;
+    color: #252525;
+    transition: 0.5s ease-in-out;
+    
+
+}
+
+h1{
+    position:absolute;
+    top: 10px;
+    
+
+}
+
+.small-txt {
+    margin: 20px 0;
+}
+
+input[type="checkbox"] {
+    position: relative;
+  
+    width: 40px;
+    height: 20px;
+    background-color: #434343;
+    appearance: none;   /* Hides certain features of widgets */ 
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+} 
+
+input[type="checkbox"]:checked {
+    background-color: #04ac2e;
+}
+
+input[type="checkbox"]::before {
+     content: '';
+     position: absolute ;
+     
+     width: 16px;
+     height: 16px;
+     background-color: #f2f2f2;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+     transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+    
+    
+}
+
+.dark-mode {
+    background-color: #252525;
+    color: #f2f2f2;
+}
